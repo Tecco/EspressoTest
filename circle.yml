@@ -6,10 +6,10 @@ machine:
 
 dependencies:
   pre:
-    - chmod -x ./gradlew
+    - chmod +x ./gradlew
     - pwd
+    - ls
 
 test:
   override:
-    - ls
     - ./gradlew assembleDebug
